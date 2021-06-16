@@ -19,7 +19,7 @@ void setup() {
   smooth();
   testGraph = new graphMonitor("position vs time", 100, 50, 800, 400);
   print(Serial.list());
-  myPort = new Serial(this, Serial.list()[1], 115200); // COM4
+  myPort = new Serial(this, Serial.list()[0], 115200); // COM4
 }
 
 void draw() {
