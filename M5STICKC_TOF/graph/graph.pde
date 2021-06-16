@@ -7,6 +7,7 @@ Serial myPort;
 String mystr = "0";
 String preStr = "0" ;
 int preMystr = 0 ;
+int chek;
 
 graphMonitor testGraph;
 
@@ -112,7 +113,7 @@ void keyPressed() {
 }
 
 void serialEvent(Serial myPort) { 
-  mystr = myPort.readStringUntil('\n');
+  chek = myPort.read();
   mystr = trim(mystr);
-  println(mystr);
+  println(chek);
 }

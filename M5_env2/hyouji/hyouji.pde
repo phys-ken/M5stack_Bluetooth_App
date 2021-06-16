@@ -13,7 +13,7 @@ void setup()
   hello = loadFont("Serif-48.vlw"); 
   
   println(Serial.list());
-  myPort = new Serial(this, Serial.list()[1], 115200); // COM2
+  myPort = new Serial(this, Serial.list()[0], 115200); // COM2
   // Macでは、COM1はBluetoothで常時空いている、
   //serial.list()を参考に、大体はlist()[1]を選択する
   // シリアル通信ができているかどうかは、ターミナル上で確認すると良い。

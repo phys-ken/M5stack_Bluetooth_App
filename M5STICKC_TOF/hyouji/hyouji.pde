@@ -40,4 +40,6 @@ void draw()
 void serialEvent(Serial myPort) { 
   mystr = myPort.readStringUntil('\n');
   mystr = trim(mystr);
+  println(mystr);
+  
 }
